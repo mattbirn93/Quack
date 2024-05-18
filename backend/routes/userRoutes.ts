@@ -1,4 +1,3 @@
-// backend/routes/userRoutes.ts
 import { Router } from 'express';
 import { createUser } from '../controllers/userController';
 

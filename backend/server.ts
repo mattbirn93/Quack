@@ -1,4 +1,3 @@
-// backend/server.ts
 import express from 'express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
@@ -6,7 +5,6 @@ import dotenv from 'dotenv';
 import connectDB from './config/db';
 import userRoutes from './routes/userRoutes';
 
-// Load environment variables from .env file
 dotenv.config();
 
 const app = express();
