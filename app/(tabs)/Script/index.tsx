@@ -1,10 +1,6 @@
 import React, { useRef, useEffect } from 'react';
-import { SafeAreaView, StyleSheet } from 'react-native';
-import {
-  RichEditor,
-  RichToolbar,
-  actions,
-} from 'react-native-pell-rich-editor';
+import { SafeAreaView, StyleSheet, Keyboard, Text } from 'react-native';
+import { RichEditor, RichToolbar } from 'react-native-pell-rich-editor';
 
 type ContentItem = {
   type: 'scene-heading' | 'action' | 'character' | 'dialogue';
@@ -45,29 +41,29 @@ const ScreenwritingEditor: React.FC<ScreenwritingEditorProps> = ({
     }
   }, [content]);
 
-  // Define the actions you want to include in the toolbar
-  const toolbarActions = [
-    actions.setBold,
-    actions.setItalic,
-    actions.insertBulletsList,
-    actions.insertOrderedList,
-    actions.insertLink,
-  ];
+  // Define the custom action to hide the keyboard
+  const toolbarActions = ['custom-hide-keyboard'];
+
+  // Custom icon and action handling for the toolbar
+  const customIconMap = {
+    'custom-hide-keyboard': () => <Text style={{ fontSize: 20 }}>⬇️</Text>,
+  };
+
+  const onPressCustomAction = (action: string) => {
+    if (action === 'custom-hide-keyboard') {
+      Keyboard.dismiss();
+    }
+  };
 
   return (
     <SafeAreaView style={styles.container}>
       <RichToolbar
         editor={() => richText.current}
         actions={toolbarActions}
-        iconMap={
-          {
-            //   [actions.setBold]: require('./assets/bold.png'),
-            //   [actions.setItalic]: require('./assets/italic.png'),
-            //   [actions.insertBulletsList]: require('./assets/bullets.png'),
-            //   [actions.insertOrderedList]: require('./assets/ordered.png'),
-            //   [actions.insertLink]: require('./assets/link.png'),
-          }
-        }
+        iconMap={customIconMap}
+        onPressAddImage={() => {}}
+        onPressAddLink={() => {}}
+        onPressCustomAction={onPressCustomAction}
       />
       <RichEditor ref={richText} style={styles.editor} />
     </SafeAreaView>
