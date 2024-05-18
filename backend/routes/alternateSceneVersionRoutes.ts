@@ -1,8 +1,9 @@
-import { Router } from 'express';
-import { fetchScenes } from '../controllers/alternateSceneVersionsController';
+import express from 'express';
+import { fetchScenes } from '../controllers/alternateSceneVersionsController'; // Adjust the import path according to your project structure
 
-const router = Router();
+const router = express.Router();
 
-router.get('/', fetchScenes);
+// Route to fetch scenes by scriptId using query parameter
+router.get('/fetchScene', fetchScenes);
 
 export default router;

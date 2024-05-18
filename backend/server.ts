@@ -4,6 +4,7 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import connectDB from './config/db';
 import userRoutes from './routes/userRoutes';
+import alternateSceneVersionRoutes from './routes/alternateSceneVersionRoutes';
 
 dotenv.config();
 
@@ -19,9 +20,10 @@ connectDB();
 
 // Routes
 app.use('/api/users', userRoutes);
+app.use('/api/scenes', alternateSceneVersionRoutes);
 
-app.get("/", (req, res) => {
-  res.send("Hello World!");
+app.get('/', (req, res) => {
+  res.send('Hello World!');
 });
 
 app.listen(port, () => {
