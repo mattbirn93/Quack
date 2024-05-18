@@ -1,6 +1,10 @@
 import React, { useRef, useEffect } from 'react';
 import { SafeAreaView, StyleSheet } from 'react-native';
-import { RichEditor, RichToolbar } from 'react-native-pell-rich-editor';
+import {
+  RichEditor,
+  RichToolbar,
+  actions,
+} from 'react-native-pell-rich-editor';
 
 type ContentItem = {
   type: 'scene-heading' | 'action' | 'character' | 'dialogue';
@@ -41,16 +45,30 @@ const ScreenwritingEditor: React.FC<ScreenwritingEditorProps> = ({
     }
   }, [content]);
 
-  const contentTest: ContentItem[] = [
-    { type: 'scene-heading', text: 'INT. OFFICE - DAY' },
-    { type: 'action', text: 'John walks into the room and looks around.' },
-    { type: 'character', text: 'JOHN' },
-    { type: 'dialogue', text: 'Hello, world!' },
+  // Define the actions you want to include in the toolbar
+  const toolbarActions = [
+    actions.setBold,
+    actions.setItalic,
+    actions.insertBulletsList,
+    actions.insertOrderedList,
+    actions.insertLink,
   ];
 
   return (
     <SafeAreaView style={styles.container}>
-      <RichToolbar getEditor={() => richText} />
+      <RichToolbar
+        editor={() => richText.current}
+        actions={toolbarActions}
+        iconMap={
+          {
+            //   [actions.setBold]: require('./assets/bold.png'),
+            //   [actions.setItalic]: require('./assets/italic.png'),
+            //   [actions.insertBulletsList]: require('./assets/bullets.png'),
+            //   [actions.insertOrderedList]: require('./assets/ordered.png'),
+            //   [actions.insertLink]: require('./assets/link.png'),
+          }
+        }
+      />
       <RichEditor ref={richText} style={styles.editor} />
     </SafeAreaView>
   );
