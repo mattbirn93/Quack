@@ -12,30 +12,6 @@ export default function TabLayout() {
 
   return (
     <>
-      <Text style={{ color: 'white' }}>
-        I AM COMING FROM THE LAYOUT.TSX FILE. I AM LOADED FIRST!!!
-      </Text>
-      <Text style={{ color: 'white' }}>
-        I AM COMING FROM THE LAYOUT.TSX FILE. I AM LOADED FIRST!!!
-      </Text>
-      <Text style={{ color: 'white' }}>
-        I AM COMING FROM THE LAYOUT.TSX FILE. I AM LOADED FIRST!!!
-      </Text>
-      <Text style={{ color: 'white' }}>
-        I AM COMING FROM THE LAYOUT.TSX FILE. I AM LOADED FIRST!!!
-      </Text>
-      <Text style={{ color: 'white' }}>
-        I AM COMING FROM THE LAYOUT.TSX FILE. I AM LOADED FIRST!!!
-      </Text>
-      <Text style={{ color: 'white' }}>
-        I AM COMING FROM THE LAYOUT.TSX FILE. I AM LOADED FIRST!!!
-      </Text>
-      <Text style={{ color: 'white' }}>
-        I AM COMING FROM THE LAYOUT.TSX FILE. I AM LOADED FIRST!!!
-      </Text>
-      <Text style={{ color: 'white' }}>
-        I AM COMING FROM THE LAYOUT.TSX FILE. I AM LOADED FIRST!!!
-      </Text>
       <Tabs
         screenOptions={{
           tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
