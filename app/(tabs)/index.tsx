@@ -9,7 +9,7 @@ export default function HomeScreen() {
   console.log('Hello Turkey');
   return (
     <View style={styles.container}>
-      <Text>Hello From the Main Screen Index.tsx file!!! HOLA DOGGIE</Text>
+      <Text>Hello From the Main Screen Index.tsx file!!! HOLA DOG GIE</Text>
     </View>
   );
 }
