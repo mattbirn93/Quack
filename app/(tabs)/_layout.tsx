@@ -1,14 +1,25 @@
 import { Tabs } from 'expo-router';
 import React from 'react';
 
-import { TabBarIcon } from '@/components/navigation/TabBarIcon';
-import { Colors } from '@/constants/Colors';
-import { useColorScheme } from '@/hooks/useColorScheme';
+import { Image, StyleSheet, Platform, View , Text} from 'react-native';
+
+import { TabBarIcon } from '../../frontend/src/components/navigation/TabBarIcon';
+import { Colors } from '../../frontend/src/constants/Colors';
+import { useColorScheme } from '../../frontend/src/hooks/useColorScheme';
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
 
   return (
+    <>
+      <Text style={{color: 'white'}}>I AM COMING FROM THE LAYOUT.TSX FILE. I AM LOADED FIRST!!!</Text>
+      <Text style={{color: 'white'}}>I AM COMING FROM THE LAYOUT.TSX FILE. I AM LOADED FIRST!!!</Text>
+      <Text style={{color: 'white'}}>I AM COMING FROM THE LAYOUT.TSX FILE. I AM LOADED FIRST!!!</Text>
+      <Text style={{color: 'white'}}>I AM COMING FROM THE LAYOUT.TSX FILE. I AM LOADED FIRST!!!</Text>
+      <Text style={{color: 'white'}}>I AM COMING FROM THE LAYOUT.TSX FILE. I AM LOADED FIRST!!!</Text>
+      <Text style={{color: 'white'}}>I AM COMING FROM THE LAYOUT.TSX FILE. I AM LOADED FIRST!!!</Text>
+      <Text style={{color: 'white'}}>I AM COMING FROM THE LAYOUT.TSX FILE. I AM LOADED FIRST!!!</Text>
+      <Text style={{color: 'white'}}>I AM COMING FROM THE LAYOUT.TSX FILE. I AM LOADED FIRST!!!</Text>
     <Tabs
       screenOptions={{
         tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
@@ -33,5 +44,7 @@ export default function TabLayout() {
         }}
       />
     </Tabs>
+   
+    </>
   );
 }
