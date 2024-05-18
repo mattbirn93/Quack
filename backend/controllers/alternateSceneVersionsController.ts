@@ -9,7 +9,7 @@ export const fetchScenes = async (req: Request, res: Response) => {
   try {
     // Validate scriptId
     if (!scriptId || !mongoose.Types.ObjectId.isValid(scriptId)) {
-      return res.status(400).json({ message: 'Invalid script ID' });
+      return res.status(400).json({ message: 'Invalid script ID   sdfsf' });
     }
 
     // Convert scriptId to ObjectId
@@ -24,7 +24,7 @@ export const fetchScenes = async (req: Request, res: Response) => {
     if (!scenes || scenes.length === 0) {
       return res
         .status(404)
-        .json({ message: 'No scenes found for the given script ID' });
+        .json({ message: 'No scenes found for the given script ID.' });
     }
 
     // Return the fetched scenes
