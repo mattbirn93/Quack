@@ -12,9 +12,13 @@ export const fetchScenes = async (req: Request, res: Response) => {
       return res.status(400).json({ message: 'Invalid script ID' });
     }
 
+    // Convert scriptId to ObjectId
+    const objectId = new mongoose.Types.ObjectId(scriptId);
+
+    console.log(objectId, 'objectId');
+
     // Fetch scenes associated with the scriptId
-    const scenes = await Scene.find({ script_id: scriptId }).exec();
-    console.log(scenes, 'scenes dude');
+    const scenes = await Scene.find({ script_id: objectId }).exec();
 
     // If no scenes found, return a 404 response
     if (!scenes || scenes.length === 0) {
