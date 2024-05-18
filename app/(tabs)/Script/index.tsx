@@ -8,18 +8,23 @@ type ContentItem = {
 };
 
 type ScreenwritingEditorProps = {
-  content: ContentItem[];
+  content?: ContentItem[];
 };
 
 const ScreenwritingEditor: React.FC<ScreenwritingEditorProps> = ({
-  content,
+  content = [
+    { type: 'scene-heading', text: 'INT. OFFICE - DAY' },
+    { type: 'action', text: 'John walks into the room and looks around.' },
+    { type: 'character', text: 'JOHN' },
+    { type: 'dialogue', text: 'Hello, world!' },
+  ],
 }) => {
   const richText = useRef<RichEditor>(null);
 
   useEffect(() => {
     if (richText.current) {
       const formattedContent = content
-        .map((item: any) => {
+        .map((item) => {
           switch (item.type) {
             case 'action':
               return `<p style="${styles.action.cssText}">${item.text}</p>`;
@@ -36,9 +41,16 @@ const ScreenwritingEditor: React.FC<ScreenwritingEditorProps> = ({
     }
   }, [content]);
 
+  const contentTest: ContentItem[] = [
+    { type: 'scene-heading', text: 'INT. OFFICE - DAY' },
+    { type: 'action', text: 'John walks into the room and looks around.' },
+    { type: 'character', text: 'JOHN' },
+    { type: 'dialogue', text: 'Hello, world!' },
+  ];
+
   return (
     <SafeAreaView style={styles.container}>
-      <RichToolbar editor={richText} />
+      <RichToolbar getEditor={() => richText} />
       <RichEditor ref={richText} style={styles.editor} />
     </SafeAreaView>
   );
