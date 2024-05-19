@@ -19,26 +19,24 @@ const ScreenwritingEditor: React.FC<ScreenwritingEditorProps> = ({
   const richText = useRef<RichEditor>(null);
 
   useEffect(() => {
-    console.log('hit');
-    const fetchScenes = async () => {
+    const fetchData = async () => {
+      console.log('BEFORE');
       try {
-        const response = await fetch(
-          'http://68.173.116.112:5001/api/Scenes/fetchAllScenes',
-        );
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        const data = await response.json();
-        console.log('Fetched scenes:', data);
-
-        // Assuming data is an array of scenes
-        setContent(data);
+        const response = await axios.post('http://localhost:5001/api/users', {
+          first_name: 'From front end 11',
+          last_name: 'also from front end 11',
+          email: 'frontendMan@gmail.com',
+          scripts_id_array: [],
+        });
+        console.log('SUCCESS');
+        console.log('User added:', response.data);
       } catch (error) {
-        console.error('Error fetching scenes:', error);
+        console.error('Error adding user:', error);
+        console.log('FAILED');
       }
     };
 
-    fetchScenes();
+    fetchData();
   }, []);
 
   useEffect(() => {
