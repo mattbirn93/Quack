@@ -1,6 +1,7 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { SafeAreaView, StyleSheet, Keyboard, Text } from 'react-native';
 import { RichEditor, RichToolbar } from 'react-native-pell-rich-editor';
+import axios from 'axios';
 
 type ContentItem = {
   type: 'scene-heading' | 'action' | 'character' | 'dialogue';
@@ -8,18 +9,37 @@ type ContentItem = {
 };
 
 type ScreenwritingEditorProps = {
-  content?: ContentItem[];
+  initialContent?: ContentItem[];
 };
 
 const ScreenwritingEditor: React.FC<ScreenwritingEditorProps> = ({
-  content = [
-    { type: 'scene-heading', text: 'INT. OFFICE - DAY' },
-    { type: 'action', text: 'John walks into the room and looks around.' },
-    { type: 'character', text: 'JOHN' },
-    { type: 'dialogue', text: 'Hello, world!' },
-  ],
+  initialContent = [],
 }) => {
+  const [content, setContent] = useState<ContentItem[]>(initialContent);
   const richText = useRef<RichEditor>(null);
+
+  useEffect(() => {
+    console.log('hit');
+    const fetchScenes = async () => {
+      try {
+        const response = await fetch(
+          'http://68.173.116.112:5001/api/Scenes/fetchAllScenes',
+        );
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        const data = await response.json();
+        console.log('Fetched scenes:', data);
+
+        // Assuming data is an array of scenes
+        setContent(data);
+      } catch (error) {
+        console.error('Error fetching scenes:', error);
+      }
+    };
+
+    fetchScenes();
+  }, []);
 
   useEffect(() => {
     if (richText.current) {
@@ -39,12 +59,10 @@ const ScreenwritingEditor: React.FC<ScreenwritingEditorProps> = ({
         .join('');
       richText.current?.setContentHTML(formattedContent);
     }
-  }, [content]);
+  }, []);
 
-  // Define the custom action to hide the keyboard
   const toolbarActions = ['custom-hide-keyboard'];
 
-  // Custom icon and action handling for the toolbar
   const customIconMap = {
     'custom-hide-keyboard': () => <Text style={{ fontSize: 20 }}>⬇️</Text>,
   };
@@ -57,14 +75,7 @@ const ScreenwritingEditor: React.FC<ScreenwritingEditorProps> = ({
 
   return (
     <SafeAreaView style={styles.container}>
-      <RichToolbar
-        editor={() => richText.current}
-        actions={toolbarActions}
-        iconMap={customIconMap}
-        onPressAddImage={() => {}}
-        onPressAddLink={() => {}}
-        onPressCustomAction={onPressCustomAction}
-      />
+      <RichToolbar />
       <RichEditor ref={richText} style={styles.editor} />
     </SafeAreaView>
   );
@@ -97,5 +108,4 @@ const styles = StyleSheet.create({
     cssText: 'margin-left: 20px;',
   },
 });
-
 export default ScreenwritingEditor;

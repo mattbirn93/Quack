@@ -10,7 +10,7 @@ export interface ISceneVersion extends Document {
 }
 
 export interface IScene extends Document {
-  script_id: mongoose.Types.ObjectId;
+  script_id: string;
   scene_array: ISceneVersion[];
   time_stamp: Date;
 }
@@ -29,9 +29,10 @@ const sceneVersionSchema: Schema = new Schema({
 });
 
 const sceneSchema: Schema = new Schema({
-  script_id: { type: mongoose.Types.ObjectId, required: false, ref: 'Script' },
+  script_id: { type: String, required: false, ref: 'Script' },
   scene_array: { type: [sceneVersionSchema], required: false },
   time_stamp: { type: Date, default: Date.now },
 });
 
-export default mongoose.model<IScene>('Scene', sceneSchema);
+// Specify the collection name explicitly
+export default mongoose.model<IScene>('AltScript', sceneSchema, 'AltScript');
