@@ -28,6 +28,6 @@ app.get('/', (req, res) => {
 
 console.log('MongoDB URI:', process.env.MONGO_URI);
 
-app.listen(port, () => {
+app.listen(5001, '0.0.0.0', () => {
   console.log(`Server running on port ${port}`);
 });
