@@ -38,6 +38,8 @@ app.use('/api/scripts', scriptRoutes);
 app.use('/api/scenes', sceneRoutes);
 app.use('/api/sceneVersions', sceneVersionRoutes);
 app.use('/api/sceneVersionContent', sceneVersionContentRoutes);
+app.use('/api/scenes/sceneVersions', sceneVersionContentRoutes);
+app.use('/api/scenes/sceneVersionContent', sceneVersionContentRoutes);
 
 app.get('/', (req, res) => {
   res.send('Hello World!');
