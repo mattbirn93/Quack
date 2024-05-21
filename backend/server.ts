@@ -7,6 +7,10 @@ import dotenv from 'dotenv';
 import connectDB from './config/db';
 import userRoutes from './routes/userRoutes';
 import alternateSceneVersionRoutes from './routes/alternateSceneVersionRoutes';
+import scriptRoutes from './routes/scriptRoutes';
+import sceneRoutes from './routes/sceneRoutes';
+import sceneVersionRoutes from './routes/sceneVersionRoutes';
+import sceneVersionContentRoutes from './routes/sceneVersionContentRoutes';
 import { createUserSocket } from './controllers/userController2';
 
 dotenv.config();
@@ -30,6 +34,10 @@ connectDB();
 
 app.use('/api/users', userRoutes);
 app.use('/api/scenes', alternateSceneVersionRoutes);
+app.use('/api/scripts', scriptRoutes);
+app.use('/api/scenes', sceneRoutes);
+app.use('/api/sceneVersions', sceneVersionRoutes);
+app.use('/api/sceneVersionContent', sceneVersionContentRoutes);
 
 app.get('/', (req, res) => {
   res.send('Hello World!');
@@ -59,9 +67,7 @@ server.listen(Number(port), '0.0.0.0', () => {
   console.log(`Server running on port ${port}`);
 });
 
-
 //////////////////////////////////////////
-
 
 // import express from 'express';
 // import bodyParser from 'body-parser';
@@ -96,4 +102,3 @@ server.listen(Number(port), '0.0.0.0', () => {
 // app.listen(Number(port), '0.0.0.0', () => {
 //   console.log(`Server running on port ${port}`);
 // });
-
