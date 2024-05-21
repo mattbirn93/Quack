@@ -171,9 +171,9 @@ const ScreenwritingEditor: React.FC<ScreenwritingEditorProps> = ({
         const response = await axios.post(
           'http://192.168.0.211:5001/api/users',
           {
-            first_name: 'From front end UseEffect2',
-            last_name: 'aFrom front end UseEffect2',
-            email: 'From front end UseEffect2@gmail.com',
+            first_name: 'From front end UseEffect4',
+            last_name: 'aFrom front end UseEffect4',
+            email: 'From front end UseEffect2@gmai4l.com',
             scripts_id_array: [],
           },
         );
@@ -189,7 +189,7 @@ const ScreenwritingEditor: React.FC<ScreenwritingEditorProps> = ({
   }, []);
 
   // Below here is the web scoket code that seems to be working. I just have to ask Wiggins if he agrees or not.
-  const socket = io('http://192.168.0.211:5001'); // Matt/Mike, make sure and change this to your address that works.
+  const socket = io('http://192.168.0.46:5001'); // Matt/Mike, make sure and change this to your address that works.
 
   socket.on('connect', () => {
     console.log('Socket connected');
@@ -208,9 +208,9 @@ const ScreenwritingEditor: React.FC<ScreenwritingEditorProps> = ({
   // Here is our version of a simple request to add a user to the MONGOLITIS DATABSE YOOOOOOOOOOOOOOOO!!!!!!
   const addUser = () => {
     const data = {
-      first_name: 'From front end websockets version2',
-      last_name: 'From front end websockets version2',
-      email: 'From front end websockets version2@gmail.com',
+      first_name: 'From front end websockets version6',
+      last_name: 'From front end websockets version6',
+      email: 'From front end websockets version6@gmail.com',
       scripts_id_array: [],
     };
     socket.emit('add_user', data);

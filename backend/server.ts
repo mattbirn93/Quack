@@ -59,9 +59,7 @@ server.listen(Number(port), '0.0.0.0', () => {
   console.log(`Server running on port ${port}`);
 });
 
-
 //////////////////////////////////////////
-
 
 // import express from 'express';
 // import bodyParser from 'body-parser';
@@ -96,4 +94,3 @@ server.listen(Number(port), '0.0.0.0', () => {
 // app.listen(Number(port), '0.0.0.0', () => {
 //   console.log(`Server running on port ${port}`);
 // });
-
