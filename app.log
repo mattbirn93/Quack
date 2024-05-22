@@ -197,3 +197,135 @@
 2024-05-22T05:19:56.721Z [32minfo[39m: SIGTERM signal received: closing HTTP server for realz
 2024-05-22T05:19:56.726Z [32minfo[39m: HTTP server closed son
 2024-05-22T05:19:56.727Z [32minfo[39m: WebSocket server closed son
+2024-05-22T05:20:58.742Z [32minfo[39m: MongoDB Quack connected
+2024-05-22T05:20:58.744Z [32minfo[39m: Quack server running on port 5001
+2024-05-22T05:36:05.783Z [32minfo[39m: SIGTERM signal received: closing HTTP server for realz
+2024-05-22T05:36:05.792Z [32minfo[39m: HTTP server closed son
+2024-05-22T05:36:05.796Z [32minfo[39m: WebSocket server closed son
+2024-05-22T05:36:09.061Z [32minfo[39m: MongoDB Quack connected
+2024-05-22T05:36:09.063Z [32minfo[39m: Quack server running on port 5001
+2024-05-22T05:36:12.278Z [32minfo[39m: SIGTERM signal received: closing HTTP server for realz
+2024-05-22T05:36:12.279Z [32minfo[39m: HTTP server closed son
+2024-05-22T05:36:12.280Z [32minfo[39m: WebSocket server closed son
+2024-05-22T05:37:46.147Z [32minfo[39m: MongoDB Quack connected
+2024-05-22T05:37:46.151Z [32minfo[39m: Quack server running on port 5001
+2024-05-22T05:37:49.436Z [32minfo[39m: SIGTERM signal received: closing HTTP server for realz
+2024-05-22T05:37:49.437Z [32minfo[39m: HTTP server closed son
+2024-05-22T05:37:49.438Z [32minfo[39m: WebSocket server closed son
+2024-05-22T05:39:18.898Z [32minfo[39m: MongoDB Quack connected
+2024-05-22T05:39:18.902Z [32minfo[39m: Quack server running on port 5001
+2024-05-22T05:40:02.914Z [32minfo[39m: SIGTERM signal received: closing HTTP server for realz
+2024-05-22T05:40:02.916Z [32minfo[39m: HTTP server closed son
+2024-05-22T05:40:02.917Z [32minfo[39m: WebSocket server closed son
+2024-05-22T05:40:06.361Z [32minfo[39m: MongoDB Quack connected
+2024-05-22T05:40:06.364Z [32minfo[39m: Quack server running on port 5001
+2024-05-22T05:40:42.459Z [31merror[39m: SyntaxError: Unexpected token } in JSON at position 266
+    at JSON.parse (<anonymous>)
+    at parse (/Users/mattbirnholtz/Quack/node_modules/body-parser/lib/types/json.js:92:19)
+    at /Users/mattbirnholtz/Quack/node_modules/body-parser/lib/read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)
+    at invokeCallback (/Users/mattbirnholtz/Quack/node_modules/raw-body/index.js:238:16)
+    at done (/Users/mattbirnholtz/Quack/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/Users/mattbirnholtz/Quack/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:513:28)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+2024-05-22T05:53:21.885Z [32minfo[39m: SIGTERM signal received: closing HTTP server for realz
+2024-05-22T05:53:21.890Z [32minfo[39m: HTTP server closed son
+2024-05-22T05:53:21.893Z [32minfo[39m: WebSocket server closed son
+2024-05-22T05:53:25.078Z [32minfo[39m: MongoDB Quack connected
+2024-05-22T05:53:25.079Z [32minfo[39m: Quack server running on port 5001
+2024-05-22T05:58:29.770Z [32minfo[39m: SIGTERM signal received: closing HTTP server for realz
+2024-05-22T05:58:29.771Z [32minfo[39m: HTTP server closed son
+2024-05-22T05:58:29.772Z [32minfo[39m: WebSocket server closed son
+2024-05-22T05:58:33.586Z [32minfo[39m: MongoDB Quack connected
+2024-05-22T05:58:33.588Z [32minfo[39m: Quack server running on port 5001
+2024-05-22T06:02:41.107Z [32minfo[39m: SIGTERM signal received: closing HTTP server for realz
+2024-05-22T06:02:41.109Z [32minfo[39m: HTTP server closed son
+2024-05-22T06:02:41.110Z [32minfo[39m: WebSocket server closed son
+2024-05-22T06:02:45.120Z [32minfo[39m: MongoDB Quack connected
+2024-05-22T06:02:45.124Z [32minfo[39m: Quack server running on port 5001
+2024-05-22T06:09:56.474Z [32minfo[39m: SIGTERM signal received: closing HTTP server for realz
+2024-05-22T06:09:58.930Z [32minfo[39m: HTTP server closed son
+2024-05-22T06:09:58.932Z [32minfo[39m: WebSocket server closed son
+2024-05-22T06:10:00.234Z [32minfo[39m: MongoDB Quack connected
+2024-05-22T06:10:00.240Z [32minfo[39m: Quack server running on port 5001
+2024-05-22T06:17:33.663Z [32minfo[39m: SIGTERM signal received: closing HTTP server for realz
+2024-05-22T06:17:33.672Z [32minfo[39m: HTTP server closed son
+2024-05-22T06:17:33.678Z [32minfo[39m: WebSocket server closed son
+2024-05-22T06:17:37.774Z [32minfo[39m: MongoDB Quack connected
+2024-05-22T06:17:37.776Z [32minfo[39m: Quack server running on port 5001
+2024-05-22T06:19:30.144Z [32minfo[39m: SIGTERM signal received: closing HTTP server for realz
+2024-05-22T06:19:30.145Z [32minfo[39m: HTTP server closed son
+2024-05-22T06:19:30.146Z [32minfo[39m: WebSocket server closed son
+2024-05-22T06:19:33.990Z [32minfo[39m: MongoDB Quack connected
+2024-05-22T06:19:33.993Z [32minfo[39m: Quack server running on port 5001
+2024-05-22T06:21:53.129Z [32minfo[39m: SIGTERM signal received: closing HTTP server for realz
+2024-05-22T06:21:53.132Z [32minfo[39m: HTTP server closed son
+2024-05-22T06:21:53.134Z [32minfo[39m: WebSocket server closed son
+2024-05-22T06:21:57.740Z [32minfo[39m: MongoDB Quack connected
+2024-05-22T06:21:57.744Z [32minfo[39m: Quack server running on port 5001
+2024-05-22T06:22:39.239Z [32minfo[39m: SIGTERM signal received: closing HTTP server for realz
+2024-05-22T06:22:39.241Z [32minfo[39m: HTTP server closed son
+2024-05-22T06:22:39.242Z [32minfo[39m: WebSocket server closed son
+2024-05-22T06:22:43.231Z [32minfo[39m: MongoDB Quack connected
+2024-05-22T06:22:43.233Z [32minfo[39m: Quack server running on port 5001
+2024-05-22T06:26:53.284Z [32minfo[39m: SIGTERM signal received: closing HTTP server for realz
+2024-05-22T06:26:53.287Z [32minfo[39m: HTTP server closed son
+2024-05-22T06:26:53.288Z [32minfo[39m: WebSocket server closed son
+2024-05-22T06:26:57.287Z [32minfo[39m: MongoDB Quack connected
+2024-05-22T06:26:57.290Z [32minfo[39m: Quack server running on port 5001
+2024-05-22T06:27:46.478Z [31merror[39m: SyntaxError: Unexpected token } in JSON at position 149
+    at JSON.parse (<anonymous>)
+    at parse (/Users/mattbirnholtz/Quack/node_modules/body-parser/lib/types/json.js:92:19)
+    at /Users/mattbirnholtz/Quack/node_modules/body-parser/lib/read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)
+    at invokeCallback (/Users/mattbirnholtz/Quack/node_modules/raw-body/index.js:238:16)
+    at done (/Users/mattbirnholtz/Quack/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/Users/mattbirnholtz/Quack/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:513:28)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+2024-05-22T06:27:52.339Z [32minfo[39m: SIGTERM signal received: closing HTTP server for realz
+2024-05-22T06:27:55.614Z [32minfo[39m: HTTP server closed son
+2024-05-22T06:27:55.621Z [32minfo[39m: WebSocket server closed son
+2024-05-22T06:27:55.804Z [32minfo[39m: MongoDB Quack connected
+2024-05-22T06:27:55.807Z [32minfo[39m: Quack server running on port 5001
+2024-05-22T06:28:22.264Z [32minfo[39m: SIGTERM signal received: closing HTTP server for realz
+2024-05-22T06:28:22.266Z [32minfo[39m: HTTP server closed son
+2024-05-22T06:28:22.266Z [32minfo[39m: WebSocket server closed son
+2024-05-22T06:28:26.073Z [32minfo[39m: MongoDB Quack connected
+2024-05-22T06:28:26.079Z [32minfo[39m: Quack server running on port 5001
+2024-05-22T06:28:48.841Z [32minfo[39m: SIGTERM signal received: closing HTTP server for realz
+2024-05-22T06:28:48.843Z [32minfo[39m: HTTP server closed son
+2024-05-22T06:28:48.844Z [32minfo[39m: WebSocket server closed son
+2024-05-22T06:28:52.818Z [32minfo[39m: MongoDB Quack connected
+2024-05-22T06:28:52.821Z [32minfo[39m: Quack server running on port 5001
+2024-05-22T06:31:53.713Z [32minfo[39m: SIGTERM signal received: closing HTTP server for realz
+2024-05-22T06:31:53.715Z [32minfo[39m: HTTP server closed son
+2024-05-22T06:31:53.718Z [32minfo[39m: WebSocket server closed son
+2024-05-22T06:32:02.682Z [32minfo[39m: MongoDB Quack connected
+2024-05-22T06:32:02.684Z [32minfo[39m: Quack server running on port 5001
+2024-05-22T06:34:42.033Z [32minfo[39m: SIGTERM signal received: closing HTTP server for realz
+2024-05-22T06:34:42.040Z [32minfo[39m: HTTP server closed son
+2024-05-22T06:34:42.042Z [32minfo[39m: WebSocket server closed son
+2024-05-22T06:35:20.242Z [32minfo[39m: MongoDB Quack connected
+2024-05-22T06:35:20.246Z [32minfo[39m: Quack server running on port 5001
+2024-05-22T06:38:13.722Z [32minfo[39m: SIGTERM signal received: closing HTTP server for realz
+2024-05-22T06:38:13.723Z [32minfo[39m: HTTP server closed son
+2024-05-22T06:38:13.724Z [32minfo[39m: WebSocket server closed son
+2024-05-22T06:38:17.404Z [32minfo[39m: MongoDB Quack connected
+2024-05-22T06:38:17.408Z [32minfo[39m: Quack server running on port 5001
+2024-05-22T06:41:17.367Z [32minfo[39m: SIGTERM signal received: closing HTTP server for realz
+2024-05-22T06:41:17.368Z [32minfo[39m: HTTP server closed son
+2024-05-22T06:41:17.369Z [32minfo[39m: WebSocket server closed son
+2024-05-22T06:41:22.308Z [32minfo[39m: MongoDB Quack connected
+2024-05-22T06:41:22.311Z [32minfo[39m: Quack server running on port 5001
+2024-05-22T06:48:01.368Z [32minfo[39m: SIGTERM signal received: closing HTTP server for realz
+2024-05-22T06:48:01.371Z [32minfo[39m: HTTP server closed son
+2024-05-22T06:48:01.373Z [32minfo[39m: WebSocket server closed son
+2024-05-22T06:48:06.749Z [32minfo[39m: MongoDB Quack connected
+2024-05-22T06:48:06.757Z [32minfo[39m: Quack server running on port 5001
+2024-05-22T06:52:47.524Z [32minfo[39m: SIGTERM signal received: closing HTTP server for realz
+2024-05-22T06:52:47.526Z [32minfo[39m: HTTP server closed son
+2024-05-22T06:52:47.527Z [32minfo[39m: WebSocket server closed son
