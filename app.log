@@ -1,0 +1,152 @@
+2024-05-21T03:52:51.922Z [32minfo[39m: MongoDB connected
+2024-05-21T03:52:51.926Z [32minfo[39m: Server running on port 5001
+2024-05-21T03:54:00.293Z [32minfo[39m: New client connected: w5ouJ1s510WotaZxAAAB
+2024-05-21T03:55:31.358Z [32minfo[39m: New client connected: vKAvqLnN8_06GrWiAAAD
+2024-05-21T03:56:26.589Z [32minfo[39m: Client disconnected: vKAvqLnN8_06GrWiAAAD
+2024-05-21T03:56:26.599Z [32minfo[39m: New client connected: zFlqqDQSBmLfsy_AAAAF
+2024-05-21T03:56:26.600Z [32minfo[39m: Client disconnected: w5ouJ1s510WotaZxAAAB
+2024-05-21T03:56:26.625Z [32minfo[39m: New client connected: ObvBVXe9CgcWzWySAAAH
+2024-05-21T03:56:43.021Z [32minfo[39m: Client disconnected: zFlqqDQSBmLfsy_AAAAF
+2024-05-21T03:56:43.026Z [32minfo[39m: New client connected: RZ6sS6LVifSIDekeAAAJ
+2024-05-21T03:56:43.285Z [32minfo[39m: Client disconnected: ObvBVXe9CgcWzWySAAAH
+2024-05-21T03:56:43.318Z [32minfo[39m: New client connected: hr6swvOCCLv_UF-dAAAL
+2024-05-21T03:57:10.103Z [32minfo[39m: Client disconnected: RZ6sS6LVifSIDekeAAAJ
+2024-05-21T03:57:10.113Z [32minfo[39m: New client connected: EZUk9c02KtN-bbThAAAN
+2024-05-21T03:57:10.209Z [32minfo[39m: Client disconnected: hr6swvOCCLv_UF-dAAAL
+2024-05-21T03:57:10.277Z [32minfo[39m: New client connected: Ge0gfepGsUrA8dAIAAAP
+2024-05-21T03:57:38.060Z [32minfo[39m: Client disconnected: EZUk9c02KtN-bbThAAAN
+2024-05-21T03:57:38.086Z [32minfo[39m: Client disconnected: Ge0gfepGsUrA8dAIAAAP
+2024-05-21T03:58:24.843Z [32minfo[39m: New client connected: j6ttTg74r-VwGyYbAAAU
+2024-05-21T03:58:24.902Z [32minfo[39m: New client connected: _4V_mIWwf4nSD6fIAAAW
+2024-05-21T03:58:35.437Z [32minfo[39m: Client disconnected: j6ttTg74r-VwGyYbAAAU
+2024-05-21T04:00:11.609Z [32minfo[39m: SIGTERM signal received: closing HTTP server
+2024-05-21T04:00:11.661Z [32minfo[39m: SIGTERM signal received: closing HTTP server
+2024-05-21T04:00:11.706Z [32minfo[39m: SIGTERM signal received: closing HTTP server
+2024-05-21T04:00:16.314Z [32minfo[39m: SIGTERM signal received: closing HTTP server
+2024-05-21T04:00:28.007Z [32minfo[39m: MongoDB Quack connected
+2024-05-21T04:00:28.010Z [32minfo[39m: Server running on port 5001
+2024-05-21T04:02:16.723Z [32minfo[39m: SIGTERM signal received: closing HTTP server
+2024-05-21T04:02:16.724Z [32minfo[39m: HTTP server closed
+2024-05-21T04:02:16.725Z [32minfo[39m: WebSocket server closed
+2024-05-21T04:02:26.267Z [32minfo[39m: MongoDB Quack connected
+2024-05-21T04:02:26.271Z [32minfo[39m: Quack server running on port 5001
+2024-05-21T04:03:18.674Z [32minfo[39m: Client disconnected: _4V_mIWwf4nSD6fIAAAW
+2024-05-21T04:03:18.688Z [32minfo[39m: HTTP server closed
+2024-05-21T04:03:18.715Z [32minfo[39m: New client connected: fhuaMTfxs0u9A_3IAAAB
+2024-05-21T04:03:18.690Z [32minfo[39m: HTTP server closed
+2024-05-21T04:03:18.690Z [32minfo[39m: HTTP server closed
+2024-05-21T04:03:18.690Z [32minfo[39m: HTTP server closed
+2024-05-21T04:03:18.690Z [32minfo[39m: WebSocket server closed
+2024-05-21T04:03:18.694Z [32minfo[39m: WebSocket server closed
+2024-05-21T04:03:18.694Z [32minfo[39m: WebSocket server closed
+2024-05-21T04:03:18.694Z [32minfo[39m: WebSocket server closed
+2024-05-21T04:04:21.717Z [32minfo[39m: SIGTERM signal received: closing HTTP server for realz
+2024-05-21T04:04:21.759Z [32minfo[39m: SIGTERM signal received: closing HTTP server for realz
+2024-05-21T04:04:21.802Z [32minfo[39m: SIGTERM signal received: closing HTTP server for realz
+2024-05-21T04:04:38.749Z [32minfo[39m: MongoDB Quack connected
+2024-05-21T04:04:38.752Z [32minfo[39m: Quack server running on port 5001
+2024-05-21T04:04:52.075Z [32minfo[39m: Client disconnected for realz: fhuaMTfxs0u9A_3IAAAB
+2024-05-21T04:04:52.075Z [32minfo[39m: HTTP server closed son
+2024-05-21T04:04:52.075Z [32minfo[39m: HTTP server closed son
+2024-05-21T04:04:52.076Z [32minfo[39m: HTTP server closed son
+2024-05-21T04:04:52.076Z [32minfo[39m: WebSocket server closed son
+2024-05-21T04:04:52.077Z [32minfo[39m: WebSocket server closed son
+2024-05-21T04:04:52.077Z [32minfo[39m: WebSocket server closed son
+2024-05-21T04:05:07.054Z [32minfo[39m: SIGTERM signal received: closing HTTP server for realz
+2024-05-21T04:05:07.055Z [32minfo[39m: HTTP server closed son
+2024-05-21T04:05:07.056Z [32minfo[39m: WebSocket server closed son
+2024-05-21T04:05:14.079Z [32minfo[39m: MongoDB Quack connected
+2024-05-21T04:05:14.082Z [32minfo[39m: Quack server running on port 5001
+2024-05-21T04:05:21.515Z [32minfo[39m: New client connected: TOlimabQ-aAMhnBkAAAB
+2024-05-21T04:05:45.042Z [32minfo[39m: Client disconnected for realz: TOlimabQ-aAMhnBkAAAB
+2024-05-21T04:05:45.086Z [32minfo[39m: New client connected: Yy38bOln-3wu8IM4AAAD
+2024-05-21T04:06:16.570Z [32minfo[39m: Client disconnected for realz: Yy38bOln-3wu8IM4AAAD
+2024-05-21T04:06:16.659Z [32minfo[39m: New client connected: oLLwcX3s8J68d8P7AAAF
+2024-05-21T04:06:46.944Z [32minfo[39m: Client disconnected for realz: oLLwcX3s8J68d8P7AAAF
+2024-05-21T04:06:46.972Z [32minfo[39m: New client connected: ZM_BCMJIg0XF5X0GAAAH
+2024-05-21T04:24:07.117Z [32minfo[39m: Client disconnected for realz: ZM_BCMJIg0XF5X0GAAAH
+2024-05-21T21:00:32.896Z [32minfo[39m: MongoDB Quack connected
+2024-05-21T21:00:32.899Z [32minfo[39m: Quack server running on port 5001
+2024-05-21T21:01:01.322Z [32minfo[39m: New client connected: DXXOhQTMlZt1aa7XAAAB
+2024-05-21T21:02:27.443Z [32minfo[39m: Client disconnected for realz: DXXOhQTMlZt1aa7XAAAB
+2024-05-21T21:02:27.489Z [32minfo[39m: New client connected: GFHvx1vKgWdNIJnhAAAD
+2024-05-21T21:03:45.613Z [32minfo[39m: Client disconnected for realz: GFHvx1vKgWdNIJnhAAAD
+2024-05-21T21:03:45.650Z [32minfo[39m: New client connected: NzxeKK5uE6BCfDqUAAAF
+2024-05-21T21:04:05.902Z [32minfo[39m: SIGTERM signal received: closing HTTP server for realz
+2024-05-21T21:04:05.957Z [32minfo[39m: SIGTERM signal received: closing HTTP server for realz
+2024-05-21T21:04:06.004Z [32minfo[39m: SIGTERM signal received: closing HTTP server for realz
+2024-05-21T21:04:08.690Z [32minfo[39m: SIGTERM signal received: closing HTTP server for realz
+2024-05-21T21:04:15.170Z [32minfo[39m: MongoDB Quack connected
+2024-05-21T21:04:15.173Z [32minfo[39m: Quack server running on port 5001
+2024-05-21T21:04:45.147Z [32minfo[39m: Client disconnected for realz: NzxeKK5uE6BCfDqUAAAF
+2024-05-21T21:04:45.147Z [32minfo[39m: HTTP server closed son
+2024-05-21T21:04:45.148Z [32minfo[39m: HTTP server closed son
+2024-05-21T21:04:45.149Z [32minfo[39m: HTTP server closed son
+2024-05-21T21:04:45.149Z [32minfo[39m: HTTP server closed son
+2024-05-21T21:04:45.149Z [32minfo[39m: WebSocket server closed son
+2024-05-21T21:04:45.149Z [32minfo[39m: WebSocket server closed son
+2024-05-21T21:04:45.150Z [32minfo[39m: WebSocket server closed son
+2024-05-21T21:04:45.150Z [32minfo[39m: WebSocket server closed son
+2024-05-21T21:05:05.213Z [32minfo[39m: New client connected: ABlnXy_nySkjzsm_AAAB
+2024-05-21T21:05:34.588Z [32minfo[39m: Client disconnected for realz: ABlnXy_nySkjzsm_AAAB
+2024-05-21T21:06:14.324Z [32minfo[39m: New client connected: gkx0BnrZyO_95bi2AAAD
+2024-05-21T21:07:08.917Z [32minfo[39m: Client disconnected for realz: gkx0BnrZyO_95bi2AAAD
+2024-05-21T21:08:08.746Z [32minfo[39m: New client connected: wmopWjVywJ03k9e9AAAF
+2024-05-21T21:08:20.274Z [32minfo[39m: Client disconnected for realz: wmopWjVywJ03k9e9AAAF
+2024-05-21T21:09:28.420Z [32minfo[39m: New client connected: xIfWN0R49X5IS5bnAAAH
+2024-05-21T21:10:14.414Z [32minfo[39m: MongoDB Quack connected
+2024-05-21T21:10:14.418Z [32minfo[39m: Quack server running on port 5001
+2024-05-21T21:10:33.970Z [32minfo[39m: New client connected: hAt5QSb-fUHJTET-AAAB
+2024-05-21T21:11:08.952Z [32minfo[39m: Client disconnected for realz: hAt5QSb-fUHJTET-AAAB
+2024-05-21T21:11:29.975Z [32minfo[39m: New client connected: Jb95aSwRHr29pj3rAAAD
+2024-05-21T21:14:33.953Z [32minfo[39m: Client disconnected for realz: Jb95aSwRHr29pj3rAAAD
+2024-05-21T21:15:48.943Z [32minfo[39m: New client connected: JONkL1y4gw4KxSMcAAAF
+2024-05-21T21:16:22.997Z [32minfo[39m: Client disconnected for realz: JONkL1y4gw4KxSMcAAAF
+2024-05-21T21:16:29.792Z [32minfo[39m: SIGTERM signal received: closing HTTP server for realz
+2024-05-21T21:16:29.795Z [32minfo[39m: HTTP server closed son
+2024-05-21T21:16:29.797Z [32minfo[39m: WebSocket server closed son
+2024-05-21T21:18:16.831Z [32minfo[39m: MongoDB Quack connected
+2024-05-21T21:18:16.835Z [32minfo[39m: Quack server running on port 5001
+2024-05-21T21:19:34.096Z [32minfo[39m: SIGTERM signal received: closing HTTP server for realz
+2024-05-21T21:19:34.097Z [32minfo[39m: HTTP server closed son
+2024-05-21T21:19:34.098Z [32minfo[39m: WebSocket server closed son
+2024-05-21T21:19:40.049Z [32minfo[39m: MongoDB Quack connected
+2024-05-21T21:19:40.053Z [32minfo[39m: Quack server running on port 5001
+2024-05-21T21:21:24.925Z [32minfo[39m: MongoDB Quack connected
+2024-05-21T21:21:24.928Z [32minfo[39m: Quack server running on port 5001
+2024-05-21T21:28:15.088Z [32minfo[39m: MongoDB Quack connected
+2024-05-21T21:28:15.092Z [32minfo[39m: Quack server running on port 5001
+2024-05-21T21:30:42.725Z [32minfo[39m: MongoDB Quack connected
+2024-05-21T21:30:42.729Z [32minfo[39m: Quack server running on port 5001
+2024-05-21T21:34:37.463Z [32minfo[39m: SIGTERM signal received: closing HTTP server for realz
+2024-05-21T21:34:37.464Z [32minfo[39m: HTTP server closed son
+2024-05-21T21:34:37.465Z [32minfo[39m: WebSocket server closed son
+2024-05-21T21:34:56.526Z [32minfo[39m: MongoDB Quack connected
+2024-05-21T21:34:56.529Z [32minfo[39m: Quack server running on port 5001
+2024-05-21T21:37:23.568Z [32minfo[39m: SIGTERM signal received: closing HTTP server for realz
+2024-05-21T21:37:23.568Z [32minfo[39m: HTTP server closed son
+2024-05-21T21:37:23.569Z [32minfo[39m: WebSocket server closed son
+2024-05-21T21:37:55.985Z [32minfo[39m: MongoDB Quack connected
+2024-05-21T21:37:55.988Z [32minfo[39m: Quack server running on port 5001
+2024-05-21T21:42:37.506Z [32minfo[39m: MongoDB Quack connected
+2024-05-21T21:42:37.509Z [32minfo[39m: Quack server running on port 5001
+2024-05-21T21:56:40.628Z [32minfo[39m: New client connected: kvoRC55l2fD8dn6PAAAB
+2024-05-21T22:01:54.208Z [32minfo[39m: MongoDB Quack connected
+2024-05-21T22:01:54.212Z [32minfo[39m: Quack server running on port 5001
+2024-05-21T22:02:29.460Z [32minfo[39m: New client connected: zqDA7kQfeoAcv8ftAAAB
+2024-05-21T22:03:39.710Z [32minfo[39m: Client disconnected for realz: zqDA7kQfeoAcv8ftAAAB
+2024-05-21T22:04:30.943Z [32minfo[39m: New client connected: C38c5UsdOPH-UMuqAAAD
+2024-05-21T22:04:41.360Z [32minfo[39m: Client disconnected for realz: C38c5UsdOPH-UMuqAAAD
+2024-05-21T22:04:41.393Z [32minfo[39m: New client connected: G0CzLiEWFAMDYfIuAAAF
+2024-05-21T22:05:07.080Z [32minfo[39m: Client disconnected for realz: G0CzLiEWFAMDYfIuAAAF
+2024-05-21T22:05:26.391Z [32minfo[39m: New client connected: EygPnKhPTOnkw8pCAAAH
+2024-05-21T22:05:49.468Z [32minfo[39m: Client disconnected for realz: EygPnKhPTOnkw8pCAAAH
+2024-05-21T22:05:49.498Z [32minfo[39m: New client connected: bVvLqzsfG3EHEfTZAAAJ
+2024-05-21T22:06:20.587Z [32minfo[39m: Client disconnected for realz: bVvLqzsfG3EHEfTZAAAJ
+2024-05-21T22:06:20.620Z [32minfo[39m: New client connected: C2-0vq1_3G0PREOBAAAL
+2024-05-21T22:07:05.599Z [32minfo[39m: Client disconnected for realz: C2-0vq1_3G0PREOBAAAL
+2024-05-22T00:11:27.377Z [32minfo[39m: MongoDB Quack connected
+2024-05-22T00:11:27.379Z [32minfo[39m: Quack server running on port 5001
+2024-05-22T00:11:40.003Z [32minfo[39m: SIGTERM signal received: closing HTTP server for realz
+2024-05-22T00:11:40.006Z [32minfo[39m: HTTP server closed son
+2024-05-22T00:11:40.007Z [32minfo[39m: WebSocket server closed son
