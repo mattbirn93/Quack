@@ -222,9 +222,9 @@ const ScreenwritingEditor: React.FC<ScreenwritingEditorProps> = ({
     const fetchData = async () => {
       try {
         const response = await axios.post(`${API_BASE_URL}/api/users`, {
-          first_name: 'From front end UseEffect3',
-          last_name: 'From front end UseEffect3',
-          email: 'From front end UseEffect3@gmail.com',
+          first_name: 'From front end matt1',
+          last_name: 'From front end matt1',
+          email: 'From front end matt1@gmail.com',
           scripts_id_array: [],
         });
         console.log('User added:', response.data);
@@ -265,9 +265,9 @@ const ScreenwritingEditor: React.FC<ScreenwritingEditorProps> = ({
   // // Here is our version of a simple request to add a user to the MONGOLITIS DATABSE YOOOOOOOOOOOOOOOO!!!!!!
   const addUser = () => {
     const data = {
-      first_name: 'From front end websockets version10',
-      last_name: 'From front end websockets version10',
-      email: 'From front end websockets version10@gmail.com',
+      first_name: 'From front end websockets matt1',
+      last_name: 'From front end websockets matt1',
+      email: 'From front end websockets matt1@gmail.com',
       scripts_id_array: [],
     };
     socket.emit('add_user', data);

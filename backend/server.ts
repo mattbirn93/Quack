@@ -34,6 +34,8 @@ configureServer(app);
 app.use('/api/users', userRoutes);
 app.use('/api/scenes', alternateSceneVersionRoutes);
 app.use('/api/scripts', scriptRoutes);
+app.use('/api/scripts/createNewScript', scriptRoutes);
+
 app.use('/api/scenes', sceneRoutes);
 app.use('/api/sceneVersions', sceneVersionRoutes);
 app.use('/api/sceneVersionContent', sceneVersionContentRoutes);

@@ -1,8 +1,64 @@
 import { Request, Response } from 'express';
 import mongoose from 'mongoose';
-import scripts from '../models/scriptModel'; // Adjust the import path according to your project structure
+import scripts from '../models/scriptModel';
+import scenes from '../models/sceneModel';
 
-// Controller method to fetch scenes by scriptId
+// Controller method to create a new script and its associated scenes
+export const createScript = async (req: Request, res: Response) => {
+  const session = await mongoose.startSession();
+  session.startTransaction();
+
+  try {
+    const {
+      title,
+      title_page,
+      character_document_id,
+      users_id,
+      sceneVersions_id_array,
+    } = req.body;
+
+    // Create a new script instance
+    const newScript = new scripts({
+      _id: new mongoose.Types.ObjectId(),
+      title,
+      title_page,
+      character_document_id,
+      time_stamp: new Date(),
+      users_id,
+    });
+
+    // Save the new script to the database
+    const savedScript = await newScript.save({ session });
+
+    // Create a new scenes document
+    const newScenes = new scenes({
+      _id: new mongoose.Types.ObjectId(),
+      time_stamp: new Date(),
+      scripts_id: savedScript._id,
+      sceneVersions_id_array,
+    });
+
+    // Save the new scenes to the database
+    const savedScene = await newScenes.save({ session });
+
+    // Update the script document with the scenes ID
+    savedScript.scenes_id = savedScene._id as mongoose.Types.ObjectId;
+    await savedScript.save({ session });
+
+    // Commit the transaction
+    await session.commitTransaction();
+    session.endSession();
+
+    // Return the saved script and scenes
+    return res.status(201).json({ script: savedScript, scene: savedScene });
+  } catch (error) {
+    await session.abortTransaction();
+    session.endSession();
+    console.error('Error creating script and scenes:', error);
+    return res.status(500).json({ message: 'Server error' });
+  }
+};
+
 export const fetchScripts = async (req: Request, res: Response) => {
   try {
     // Fetch scenes associated with the scriptId
