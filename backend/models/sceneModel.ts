@@ -13,7 +13,6 @@ const sceneSchema: Schema = new Schema({
     required: true,
     ref: 'Scene',
   },
-  time_stamp: { type: Date, default: Date.now },
 });
 
 export default mongoose.model<IScene>('scenes', sceneSchema, 'scenes');

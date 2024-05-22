@@ -13,12 +13,12 @@ const sceneVersionSchema: Schema = new Schema({
   scenes_id: { type: mongoose.Types.ObjectId, required: true, ref: 'Scene' },
   sceneVersionContent_id_array: {
     type: [mongoose.Types.ObjectId],
-    required: true,
+    required: false,
     ref: 'SceneVersions',
   },
   current_sceneVersionContent_id: {
     type: mongoose.Types.ObjectId,
-    required: true,
+    required: false,
   },
   time_stamp: { type: Date, default: Date.now },
 });
