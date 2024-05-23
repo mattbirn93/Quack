@@ -1,4 +1,4 @@
-import express from 'express';
+import express, { application } from 'express';
 import http from 'http';
 import { Server as SocketIOServer } from 'socket.io';
 import mongoose from 'mongoose';
@@ -32,8 +32,10 @@ configureServer(app);
 
 // Set up routes
 app.use('/api/users', userRoutes);
+app.use('/api/users/fetchUserById', userRoutes);
 app.use('/api/scenes', alternateSceneVersionRoutes);
 app.use('/api/scripts', scriptRoutes);
+app.use('/api/scripts/fetchScriptsById', scriptRoutes);
 app.use('/api/scripts/createNewScript', scriptRoutes);
 app.use('/api/scenes', sceneRoutes);
 app.use('/api/sceneVersions', sceneVersionRoutes);

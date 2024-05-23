@@ -59,6 +59,45 @@ export const createScript = async (req: Request, res: Response) => {
   }
 };
 
+export const fetchScriptsById = async (req: Request, res: Response) => {
+  try {
+    const { ids } = req.query as { ids: string };
+    // if (!ids || !Array.isArray(ids)) {
+    //   return res.status(400).json({ message: 'Invalid ids parameter' });
+    // }
+
+    const idsArray = (typeof ids === 'string' ? ids.split(',') : []).map((id) =>
+      id.trim(),
+    );
+
+    // Convert string ids to ObjectIds
+    const objectIds = idsArray.map((id) => {
+      if (mongoose.Types.ObjectId.isValid(id)) {
+        return new mongoose.Types.ObjectId(id);
+      } else {
+        throw new Error(`Invalid ObjectId: ${id}`);
+      }
+    });
+
+    const fetchedScripts = await scripts
+      .find({
+        _id: { $in: objectIds },
+      })
+      .exec();
+
+    if (!fetchedScripts.length) {
+      return res
+        .status(404)
+        .json({ message: 'No scripts found for the given IDs.' });
+    }
+
+    return res.status(200).json(fetchedScripts);
+  } catch (error) {
+    console.error('Error fetching scripts by IDs:', error);
+    return res.status(500).json('');
+  }
+};
+
 export const fetchScripts = async (req: Request, res: Response) => {
   try {
     // Fetch scenes associated with the scriptId
