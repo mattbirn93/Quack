@@ -2,6 +2,7 @@ import { Request, Response } from 'express';
 import mongoose from 'mongoose';
 import scripts from '../models/scriptModel';
 import scenes from '../models/sceneModel';
+import User from '../models/userModel';
 
 // Controller method to create a new script and its associated scenes
 export const createScript = async (req: Request, res: Response) => {
@@ -45,6 +46,12 @@ export const createScript = async (req: Request, res: Response) => {
     savedScript.scenes_id = savedScene._id as mongoose.Types.ObjectId;
     await savedScript.save({ session });
 
+    const user = await User.findById(users_id).session(session);
+    if (!user) {
+      throw new Error('User not found');
+    }
+    user.scripts_id_array.push(savedScript._id as mongoose.Types.ObjectId);
+    await user.save({ session });
     // Commit the transaction
     await session.commitTransaction();
     session.endSession();
