@@ -21,7 +21,6 @@ export const createUser = async (req: Request, res: Response) => {
 
 export const fetchUserById = async (req: Request, res: Response) => {
   const userId = req.query.id;
-  console.log(userId);
   try {
     const user = await User.findById(userId);
 
